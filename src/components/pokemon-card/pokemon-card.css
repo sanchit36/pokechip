@@ -1,0 +1,29 @@
+.pokemon-card {
+    padding: 12px 16px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.pokemon-card__img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.pokemon-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.pokemon-card__content {
+    flex: 1;
+
+    font-size: 18px;
+    font-weight: bold;
+}

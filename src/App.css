@@ -1,0 +1,14 @@
+.App {
+  max-width: 900px;
+  margin: auto;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header span {
+  font-weight: 500;
+}

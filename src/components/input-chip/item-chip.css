@@ -1,0 +1,26 @@
+.item-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.item-chip__input {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    font-size: 18px;
+}
+
+.item-chip__input-container {
+    position: relative;
+}
+
+.item-chip__dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    max-height: 450px;
+    overflow: auto;
+}
