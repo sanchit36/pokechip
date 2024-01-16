@@ -19,27 +19,35 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="header">
-        Search your favorite <span>Pokemon</span>
-      </h1>
+      <header>
+        <h1 className="header">
+          Search your favorite <span>Pokemon</span>
+        </h1>
+      </header>
 
-      <InputChip
-        dataSource={allPokemonSpecies}
-        keyIdenifier="name"
-        placeholder="Try typing bulbasaur"
-        renderChip={(item, highlightedKey, onClose, onFocus) => (
-          <PokemonChip
-            key={item.name}
-            pokemon={item}
-            highlightedKey={highlightedKey}
-            onClose={onClose}
-            onFocus={onFocus}
-          />
-        )}
-        renderDropdowmItem={(item, onSelect) => (
-          <PokemonCard key={item.name} pokemon={item} onClick={onSelect} />
-        )}
-      />
+      <main>
+        <InputChip
+          dataSource={allPokemonSpecies}
+          keyIdenifier="name"
+          placeholder="Try typing bulbasaur"
+          renderChip={(item, highlightedKey, onClose, onFocus) => (
+            <PokemonChip
+              key={item.name}
+              pokemon={item}
+              highlightedKey={highlightedKey}
+              onClose={onClose}
+              onFocus={onFocus}
+            />
+          )}
+          renderDropdowmItem={(item, onSelect) => (
+            <PokemonCard key={item.name} pokemon={item} onClick={onSelect} />
+          )}
+        />
+      </main>
+
+      <footer>
+        <a href="https://github.com/sanchit36/pokechip">Github</a>
+      </footer>
     </div>
   );
 }
